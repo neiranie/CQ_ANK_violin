@@ -28,63 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.btnHitungMhs = new System.Windows.Forms.Button();
+            this.btnHitungMK = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnConnect
             // 
-            this.button1.Location = new System.Drawing.Point(83, 124);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(272, 101);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnConnect.Location = new System.Drawing.Point(129, 220);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(272, 101);
+            this.btnConnect.TabIndex = 0;
+            this.btnConnect.Text = "button1";
+            this.btnConnect.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnHitungMhs
             // 
-            this.button2.Location = new System.Drawing.Point(397, 124);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(272, 101);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnHitungMhs.Location = new System.Drawing.Point(453, 220);
+            this.btnHitungMhs.Name = "btnHitungMhs";
+            this.btnHitungMhs.Size = new System.Drawing.Size(272, 101);
+            this.btnHitungMhs.TabIndex = 1;
+            this.btnHitungMhs.Text = "button2";
+            this.btnHitungMhs.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnHitungMK
             // 
-            this.button3.Location = new System.Drawing.Point(717, 124);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(272, 101);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnHitungMK.Location = new System.Drawing.Point(772, 220);
+            this.btnHitungMK.Name = "btnHitungMK";
+            this.btnHitungMK.Size = new System.Drawing.Size(272, 101);
+            this.btnHitungMK.TabIndex = 2;
+            this.btnHitungMK.Text = "button3";
+            this.btnHitungMK.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnUpdate
             // 
-            this.button4.Location = new System.Drawing.Point(1044, 124);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(272, 101);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBox1
-            // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Location = new System.Drawing.Point(1052, 132);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(120, 88);
-            this.checkedListBox1.TabIndex = 4;
+            this.btnUpdate.Location = new System.Drawing.Point(1105, 220);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(272, 101);
+            this.btnUpdate.TabIndex = 3;
+            this.btnUpdate.Text = "button4";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(368, 348);
+            this.label1.Location = new System.Drawing.Point(124, 141);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 25);
             this.label1.TabIndex = 5;
@@ -92,9 +84,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(457, 342);
+            this.textBox1.Location = new System.Drawing.Point(226, 141);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(895, 31);
+            this.textBox1.Size = new System.Drawing.Size(1151, 31);
             this.textBox1.TabIndex = 6;
             // 
             // Form1
@@ -104,11 +96,10 @@
             this.ClientSize = new System.Drawing.Size(1933, 1077);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnUpdate);
+            this.Controls.Add(this.btnHitungMK);
+            this.Controls.Add(this.btnHitungMhs);
+            this.Controls.Add(this.btnConnect);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -118,11 +109,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.Button btnConnect;
+        private System.Windows.Forms.Button btnHitungMhs;
+        private System.Windows.Forms.Button btnHitungMK;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
     }
