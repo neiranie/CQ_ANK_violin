@@ -34,6 +34,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -89,11 +90,19 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "label1";
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(457, 342);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(895, 31);
+            this.textBox1.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1933, 1077);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.button4);
@@ -115,6 +124,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
