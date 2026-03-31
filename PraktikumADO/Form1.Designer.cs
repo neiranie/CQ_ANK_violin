@@ -25,6 +25,7 @@
             this.txtHasil = new System.Windows.Forms.TextBox();
             this.btnHitungDosen = new System.Windows.Forms.Button();
             this.btnUpdateMK = new System.Windows.Forms.Button();
+            this.btnInsert = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -103,11 +104,22 @@
             this.btnUpdateMK.UseVisualStyleBackColor = true;
             this.btnUpdateMK.Click += new System.EventHandler(this.btnUpdateMK_Click);
             // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(772, 345);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(272, 101);
+            this.btnInsert.TabIndex = 9;
+            this.btnInsert.Text = "Insert Prodi";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1933, 1077);
+            this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.btnUpdateMK);
             this.Controls.Add(this.btnHitungDosen);
             this.Controls.Add(this.txtHasil);
@@ -132,5 +144,6 @@
         private System.Windows.Forms.TextBox txtHasil;
         private System.Windows.Forms.Button btnHitungDosen;
         private System.Windows.Forms.Button btnUpdateMK;
+        private System.Windows.Forms.Button btnInsert;
     }
 }

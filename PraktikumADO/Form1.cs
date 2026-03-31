@@ -90,7 +90,7 @@ namespace PraktikumADO
             }
         }
 
-        // latihan 1
+        // LATIHAN 1
         private void btnHitungDosen_Click(object sender, EventArgs e)
         {
             try
@@ -109,7 +109,7 @@ namespace PraktikumADO
             }
         }
 
-        // latihan 2
+        // LATIHAN 2
         private void btnUpdateMK_Click(object sender, EventArgs e)
         {
             try
@@ -117,6 +117,25 @@ namespace PraktikumADO
                 Koneksi();
                 conn.Open();
                 string query = "UPDATE MataKuliah SET SKS=4 WHERE KodeMK='IF210101'";
+                cmd = new SqlCommand(query, conn);
+                int hasil = cmd.ExecuteNonQuery();
+                MessageBox.Show("Jumlah baris terpengaruh : " + hasil);
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        // LATIHAN 3
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+                string query = "INSERT INTO ProgramStudi VALUES ('MI01','Manajemen Informatika')";
                 cmd = new SqlCommand(query, conn);
                 int hasil = cmd.ExecuteNonQuery();
                 MessageBox.Show("Jumlah baris terpengaruh : " + hasil);
