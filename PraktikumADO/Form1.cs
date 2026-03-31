@@ -17,7 +17,7 @@ namespace PraktikumADO
         private void Koneksi()
         {
             conn = new SqlConnection(
-                "Data Source=LAPTOP-9BPMNG3K\\ANNEIRA;Initial Catalog=DBAkademikADO;Integrated Security=True"
+                "Data Source=localhost\\ANNEIRA;Initial Catalog=DBAkademikADO;Integrated Security=True"
             );
         }
 
@@ -42,13 +42,10 @@ namespace PraktikumADO
             {
                 Koneksi();
                 conn.Open();
-
                 string query = "SELECT COUNT(*) FROM Mahasiswa";
                 cmd = new SqlCommand(query, conn);
-
                 int jumlah = (int)cmd.ExecuteScalar();
                 txtHasil.Text = jumlah.ToString();
-
                 conn.Close();
             }
             catch (Exception ex)
@@ -63,13 +60,10 @@ namespace PraktikumADO
             {
                 Koneksi();
                 conn.Open();
-
                 string query = "SELECT COUNT(*) FROM MataKuliah";
                 cmd = new SqlCommand(query, conn);
-
                 int jumlah = (int)cmd.ExecuteScalar();
                 txtHasil.Text = jumlah.ToString();
-
                 conn.Close();
             }
             catch (Exception ex)
@@ -84,13 +78,10 @@ namespace PraktikumADO
             {
                 Koneksi();
                 conn.Open();
-
                 string query = "UPDATE Mahasiswa SET Alamat='Yogyakarta' WHERE NIM='23110100001'";
                 cmd = new SqlCommand(query, conn);
-
                 int hasil = cmd.ExecuteNonQuery();
                 MessageBox.Show("Jumlah baris terpengaruh : " + hasil);
-
                 conn.Close();
             }
             catch (Exception ex)
@@ -99,9 +90,42 @@ namespace PraktikumADO
             }
         }
 
+        // latihan 1
         private void btnHitungDosen_Click(object sender, EventArgs e)
         {
+            try
+            {
+                Koneksi();
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM Dosen";
+                cmd = new SqlCommand(query, conn);
+                int jumlah = (int)cmd.ExecuteScalar();
+                txtHasil.Text = jumlah.ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
+        // latihan 2
+        private void btnUpdateMK_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+                string query = "UPDATE MataKuliah SET SKS=4 WHERE KodeMK='IF210101'";
+                cmd = new SqlCommand(query, conn);
+                int hasil = cmd.ExecuteNonQuery();
+                MessageBox.Show("Jumlah baris terpengaruh : " + hasil);
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
