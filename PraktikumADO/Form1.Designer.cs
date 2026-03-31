@@ -34,6 +34,7 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtHasil = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -79,9 +80,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(124, 141);
+            this.label1.Location = new System.Drawing.Point(124, 147);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 25);
+            this.label1.Size = new System.Drawing.Size(60, 25);
             this.label1.TabIndex = 5;
             this.label1.Text = "Hasil";
             // 
@@ -92,11 +93,21 @@
             this.txtHasil.Size = new System.Drawing.Size(1151, 31);
             this.txtHasil.TabIndex = 6;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(129, 353);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(272, 101);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1933, 1077);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtHasil);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnUpdate);
@@ -107,6 +118,7 @@
             this.Text = "SqlCommand, ExecuteNonQuery, ExecuteScalar";
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -117,5 +129,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHasil;
+        private System.Windows.Forms.Button button1;
     }
 }
