@@ -2,15 +2,8 @@
 {
     partial class Form1
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +15,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.btnConnect = new System.Windows.Forms.Button();
@@ -34,7 +23,7 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtHasil = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnHitungDosen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConnect
@@ -93,21 +82,22 @@
             this.txtHasil.Size = new System.Drawing.Size(1151, 31);
             this.txtHasil.TabIndex = 6;
             // 
-            // button1
+            // btnHitungDosen
             // 
-            this.button1.Location = new System.Drawing.Point(129, 353);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(272, 101);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHitungDosen.Location = new System.Drawing.Point(129, 345);
+            this.btnHitungDosen.Name = "btnHitungDosen";
+            this.btnHitungDosen.Size = new System.Drawing.Size(272, 101);
+            this.btnHitungDosen.TabIndex = 7;
+            this.btnHitungDosen.Text = "Hitung Dosen";
+            this.btnHitungDosen.UseVisualStyleBackColor = true;
+            this.btnHitungDosen.Click += new System.EventHandler(this.btnHitungDosen_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1933, 1077);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnHitungDosen);
             this.Controls.Add(this.txtHasil);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnUpdate);
@@ -118,7 +108,6 @@
             this.Text = "SqlCommand, ExecuteNonQuery, ExecuteScalar";
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -129,6 +118,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtHasil;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnHitungDosen;
     }
 }
